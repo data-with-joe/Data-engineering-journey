@@ -1,37 +1,28 @@
-# Data Engineering Journey 🚀
+# Azure Databricks — Medallion Architecture Pipeline
 
-Documenting my transition from Community Manager to Data Engineer.
-Currently building skills in Python, Pandas, SQL, and PostgreSQL.
+## Overview
+An end-to-end data engineering pipeline built on Azure and Databricks, implementing the Medallion Architecture (Bronze/Silver/Gold) pattern for scalable data transformation and analytics.
 
-## Projects
+## Architecture
+∙	Landing layer: Raw source files ingested into ADLS
+∙	Bronze layer: Raw data loaded as-is into databricks
+∙	Silver Layer: Data cleaned and transformed using Apache Spark
+∙	Gold Layer: Aggregated analytics-ready data for BI consumption
 
-### Project 1 — Data Science Jobs EDA
-Exploratory analysis on 9,355 job postings using PostgreSQL.
-- Top paying job titles
-- Salary by experience level
-- Country-based salary comparison
-- Remote vs in-person trends
-📁 [View Project](./project-1-data-science-jobs-eda/)
-
-### Project 2 — Data Jobs EDA (1.6M rows)
-Large scale analysis on 1.6 million job postings across 4 tables.
-- Most in-demand skills
-- Top paying skills
-- Top hiring companies
-- Top 5 Data Engineer skills
-📁 [View Project](./project-2-data-jobs-1.6m/)
-
-## Skills & Tools
-- **Languages:** Python, SQL
-- **Libraries:** Pandas
-- **Databases:** PostgreSQL
-- **Tools:** TablePlus, VS Code, Git
-
-## Roadmap
-- [x] Python basics
-- [x] Pandas
-- [x] SQL fundamentals
-- [ ] Advanced SQL (Subqueries, CTEs, Window Functions)
-- [ ] PySpark
-- [ ] Databricks
-- [ ] Cloud (AWS/GCP)
+## Tech Stack
+	∙	Cloud — Microsoft Azure
+	∙	Storage — Azure Data Lake Storage (ADLS)
+	∙	Processing — Apache Spark (PySpark)
+	∙	Platform — Databricks
+	∙	Table Format — Delta Lake
+	∙	Pipeline Framework — Delta Live Tables (DLT)
+	∙	Architecture Pattern — Medallion (Bronze/Silver/Gold)
+## Concepts Demonstrated
+	∙	ELT pipeline design (load raw, transform inside the platform)
+	∙	Incremental data processing
+	∙	Data lake organization and layer separation
+	∙	Spark-based transformations at scale
+	∙	Pipeline orchestration via Databricks Workflows (Jobs & Tasks)
+	∙	Declarative pipeline management with Delta Live Tables
+# Notes
+I built this as part of my data engineering learning journey, following industry-standard patterns used in modern cloud data stacks.
