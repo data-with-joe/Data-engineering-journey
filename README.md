@@ -4,10 +4,10 @@
 An end-to-end data engineering pipeline built on Azure and Databricks, implementing the Medallion Architecture (Bronze/Silver/Gold) pattern for scalable data transformation and analytics.
 
 ## Architecture
-∙	Landing layer: Raw source files ingested into ADLS
-∙	Bronze layer: Raw data loaded as-is into databricks
-∙	Silver Layer: Data cleaned and transformed using Apache Spark
-∙	Gold Layer: Aggregated analytics-ready data for BI consumption
+	∙	Landing layer: Raw source files ingested into ADLS
+	∙	Bronze layer: Raw data loaded as-is into databricks
+	∙	Silver Layer: Data cleaned and transformed using Apache Spark
+	∙	Gold Layer: Aggregated analytics-ready data for BI consumption
 
 ## Tech Stack
 	∙	Cloud — Microsoft Azure
