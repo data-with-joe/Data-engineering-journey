@@ -22,20 +22,20 @@
     - Salary by experience level
     - Country-based salary comparison
     - Remote vs in-person trends
-📁 [View Project]([./project-1-data-science-jobs-eda/](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-science-jobs))
+📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-science-jobs)
 
-### Project 2 — Data Jobs EDA (1.6M rows)
+### Project 2 — Data Jobs EDA (1.9M rows)
     Large scale analysis on 1.6 million job postings across 4 tables.
     - Most in-demand skills
     - Top paying skills
     - Top hiring companies
     - Top 5 Data Engineer skills
-📁 [View Project]([./project-2-data-jobs-1.6m/](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-jobs-1.6m))
+📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-jobs-1.9M-rows)
 
 ### Project 3 — Azure DataBricks - Medallion Architecture
 End-to-end ELT pipeline on Azure using the Bronze/Silver/Gold Medallion architecture. 
 Built with PySpark, Delta Live Tables, and Databricks Workflows.
-📁 [View Project]([./azure-databricks/](https://github.com/data-with-joe/Data-engineering-journey/tree/azure-databricks))
+📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/azure-databricks)
 
 ## Roadmap
   - [x] Python basics
