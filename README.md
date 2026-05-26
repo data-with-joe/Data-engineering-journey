@@ -31,7 +31,7 @@ Large scale analysis on 1.6 million job postings across 4 tables.
 - [x] Python basics
 - [x] Pandas
 - [x] SQL fundamentals
-- [ ] Advanced SQL (Subqueries, CTEs, Window Functions)
-- [ ] PySpark
-- [ ] Databricks
+- [x] Advanced SQL (Subqueries, CTEs, Window Functions)
+- [x] PySpark
+- [x] Databricks
 - [ ] Cloud (AWS/GCP)
