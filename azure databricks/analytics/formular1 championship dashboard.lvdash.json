@@ -337,12 +337,12 @@
                   "datasetName": "aed92b83",
                   "fields": [
                     {
-                      "name": "driver_name",
-                      "expression": "`driver_name`"
-                    },
-                    {
                       "name": "total_point",
                       "expression": "`total_point`"
+                    },
+                    {
+                      "name": "driver_name",
+                      "expression": "`driver_name`"
                     }
                   ],
                   "disaggregated": true
@@ -378,7 +378,7 @@
                   }
                 },
                 "color": {
-                  "fieldName": "driver_name",
+                  "fieldName": "total_point",
                   "legend": {
                     "hide": true
                   },
