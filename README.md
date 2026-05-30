@@ -45,6 +45,13 @@
 
 ## Gold Layer Tables
 	TableDescriptiongold.category_summaryAggregated stats by currency category — avg, min, max ratesgold.strongest_currenciesTop 20 		    currencies stronger than USDgold.weakest_currenciesTop 20 currencies weaker than USD
+
+## Pipeline Orchestration
+	The pipeline is scheduled via Databricks Workflows to run daily.
+	Tasks execute in the following order:
+	1. `01_api_ingestion` — fetches live data from API
+	2. `02_silver_transform` — cleans and enriches data  
+	3. `03_gold_aggregations` — builds analytics tables
 	
 ## Key Concepts Demonstrated
 
