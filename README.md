@@ -1,58 +1,61 @@
-# Data Engineering Journey 🚀
-
-## About Me
-    Data Engineer with a background in software engineering and 3+ years in the tech industry spanning fintech, Web3, and AI automation. Self-taught across the modern data stack with hands on experience building end to end pipelines, distributed processing systems, and AI-powered workflows.
-    Currently pursuing a CS degree while actively building production grade data engineering projects.
-
-## Tech Stacks
-     Category             Tools
-      - processing          - Apache Spark, PySpark, Pandas
-      - Cloud               - Microsoft Azure, Azure Data Lake Storage
-      - Platform            - DataBricks, Delta lake
-      - Database            - Postgresql, MySql
-      - Languages           - Python, Sql
-      - Automation          - n8n
-      - BI/ Analysis        - Power BI, Excel, DataBricks Dashboard
-      
-## Projects
-
-### Project 1 — Data Science Jobs EDA
-    Exploratory analysis on 9,355 job postings using PostgreSQL.
-    - Top paying job titles
-    - Salary by experience level
-    - Country-based salary comparison
-    - Remote vs in-person trends
-📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-science-jobs)
-
-### Project 2 — Data Jobs EDA (1.9M rows)
-    Large scale analysis on 1.6 million job postings across 4 tables.
-    - Most in-demand skills
-    - Top paying skills
-    - Top hiring companies
-    - Top 5 Data Engineer skills
-📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-jobs-1.9M-rows)
-
-### Project 3 — Azure DataBricks - Medallion Architecture
-End-to-end ELT pipeline on Azure using the Bronze/Silver/Gold Medallion architecture. 
-Built with PySpark, Delta Live Tables, and Databricks Workflows.
-📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/azure-databricks)
-
-## Roadmap
-  - [x] Python basics
-  - [x] Pandas
-  - [x] SQL fundamentals
-  - [x] Advanced SQL (Subqueries, CTEs, Window Functions)
-  - [x] PySpark
-  - [x] Databricks
-  - [ ] Cloud (AWS/GCP)
-
-## Currently Learning
-	∙	PySpark advanced transformations
-	∙	Databricks certification prep
-	∙	Azure cloud infrastructure (DP-203 track)
-
-## Connect
-  Built in public as part of a focused data engineering transition. Follow the journey branch by branch.
+# Fintech Exchange Rate Pipeline — Medallion Architecture
 
 
-  ### Thank You
+## Overview
+	An independent end-to-end ELT pipeline that ingests live foreign exchange rate data from a public financial API, processes it through a full Medallion architecture (Bronze/Silver/Gold), and serves analytics-ready tables for reporting and BI consumption. Built entirely without guided instruction to demonstrate independent data engineering capability.
+## Architecture
+	Layer                Description  
+	BronzeRaw            exchange rate data ingested as-is from Open Exchange Rates API — 172 currencies 
+	SilverCleaned,       enriched and categorised data with derived metrics
+	GoldAggregated       analytics tables ready for BI consumptionOrchestrationMaster pipeline notebook orchestrating all layers in sequence
+	    
+## Tech Stack
+
+	Platform — Databricks Community Edition
+	Processing — Apache Spark, PySpark
+	Storage — Delta Lake
+	Data Source — Open Exchange Rates API (live financial data)
+	Language — Python, SQL
+	Architecture Pattern — Medallion (Bronze/Silver/Gold)
+## Pipeline flow
+
+	Open Exchange Rates API
+	        
+	01_api_ingestion      > bronze.exchange_rates (172 currency pairs)
+	        
+	02_silver_transform   > silver.exchange_rates (cleaned + enriched)
+	        
+	03_gold_aggregations  > gold.category_summary
+	                      > gold.strongest_currencies
+	                      > gold.weakest_currencies
+	        
+	00_pipeline_runner    > orchestrates full pipeline end to end
+
+
+
+
+## Transformations Applied (Silver Layer)
+
+	Filtered invalid/zero rates
+	Rounded rates to 6 decimal places
+	Derived rate_vs_usd — inverse rate showing USD buying power
+	Added rate_category — classifies each currency as stronger, weaker, or pegged to USD
+	Added processed_at timestamp for auditability
+
+
+## Gold Layer Tables
+	TableDescriptiongold.category_summaryAggregated stats by currency category — avg, min, max ratesgold.strongest_currenciesTop 20 		    currencies stronger than USDgold.weakest_currenciesTop 20 currencies weaker than USD
+	
+## Key Concepts Demonstrated
+
+	Real API ingestion into a data pipeline (not static files)
+	ELT design — raw data preserved in Bronze, transformed inside the platform
+	Delta Lake for reliable, versioned storage
+	Independent pipeline design without guided instruction
+	Medallion architecture implementation on Databricks
+
+# NOTE
+	This project was built independently as part of my data engineering portfolio, following the completion of a guided Medallion architecture project. It demonstrates the ability to design and build a pipeline from scratch using real financial data.
+
+
+	
