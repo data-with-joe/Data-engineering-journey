@@ -16,7 +16,14 @@
       
 ## Projects
 
-### Project 1 — Data Science Jobs EDA
+### Project 1- Banking Pipeline (Medallion Architecture + Star Schema)
+	- End to end ELT pipeline on Databricks using the real world Berka dataset (1M+ transactions, 8 CSV files). 
+	- Implements Bronze/Silver/Gold Medallion architecture with a full star schema data model (5 dimensions + 2 fact tables). 
+	- Includes real data cleaning challenges, encoded Czech values, malformed nulls, and date decoding.
+
+📁 [View Project](https://github.com/data-with-joe/banking-pipeline)
+
+### Project 2 — Data Science Jobs EDA
     Exploratory analysis on 9,355 job postings using PostgreSQL.
     - Top paying job titles
     - Salary by experience level
@@ -24,7 +31,7 @@
     - Remote vs in-person trends
 📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-science-jobs)
 
-### Project 2 — Data Jobs EDA (1.9M rows)
+### Project 3 — Data Jobs EDA (1.9M rows)
     Large scale analysis on 1.6 million job postings across 4 tables.
     - Most in-demand skills
     - Top paying skills
@@ -32,7 +39,7 @@
     - Top 5 Data Engineer skills
 📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/sql-data-jobs-1.9M-rows)
 
-### Project 3 — Azure DataBricks - Medallion Architecture
+### Project 4 — Azure DataBricks - Medallion Architecture
 End-to-end ELT pipeline on Azure using the Bronze/Silver/Gold Medallion architecture. 
 Built with PySpark, Delta Live Tables, and Databricks Workflows.
 📁 [View Project](https://github.com/data-with-joe/Data-engineering-journey/tree/azure-databricks)
