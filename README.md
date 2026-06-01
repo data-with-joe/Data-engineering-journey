@@ -53,13 +53,9 @@ Built with PySpark, Delta Live Tables, and Databricks Workflows.
   - [x] Databricks
   - [ ] Cloud (AWS/GCP)
 
-## Currently Learning
-	∙	PySpark advanced transformations
-	∙	Databricks certification prep
-	∙	Azure cloud infrastructure (DP-203 track)
 
 ## Connect
-  Built in public as part of a focused data engineering transition. Follow the journey branch by branch.
-
+ 		Email: aladejoseph656@gmail.com
 
   ### Thank You
+		 Built in public as part of a focused data engineering transition. Follow the journey branch by branch.
