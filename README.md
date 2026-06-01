@@ -1,8 +1,11 @@
 # Data Engineering Journey 🚀
 
 ## About Me
-    Data Engineer with a background in software engineering and 3+ years in the tech industry spanning fintech, Web3, and AI automation. Self-taught across the modern data stack with hands on experience building end to end pipelines, distributed processing systems, and AI-powered workflows.
-    Currently pursuing a CS degree while actively building production grade data engineering projects.
+    Data Engineer with a background in software engineering and 3+ years in the tech industry spanning fintech, Web3,
+	and AI automation. Self-taught across the modern data stack with hands on experience building end to end pipelines, 
+	distributed processing systems, and AI-powered workflows.
+    
+	Currently pursuing a CS degree while actively building production grade data engineering projects.
 
 ## Tech Stacks
      Category             Tools
